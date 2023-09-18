@@ -1,0 +1,327 @@
+Date Command - Displays and sets the systems date/time:
+Wed Apr 28 19:42:54 UTC 2021
+
+
+Hostname Command - Hostname of this VM:
+ip-172-31-93-200
+
+
+Arch Command - Lists the computer’s architecture:
+x86_64
+
+
+Uname -a Command - Basic information on current linux system
+Linux ip-172-31-93-200 5.4.0-1038-aws #40-Ubuntu SMP Fri Feb 5 23:50:40 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+
+
+Uptime Command - Lists how long the system is active:
+ 19:42:54 up 44 days, 22:22,  3 users,  load average: 0.00, 0.00, 0.00
+
+
+Whoami Command - Shows what the current username is:
+sarahmcnelis
+
+
+Who Command - List of users logged in:
+katemcgrath pts/0        2021-04-28 16:27 (91.142.105.64)
+sarahmcnelis pts/1        2021-04-28 19:31 (212.129.80.46)
+pauljackbyrne pts/2        2021-04-28 18:39 (86.41.2.235)
+
+
+Finger Command - Detailed list of users currently logged in:
+Login          Name       Tty      Idle  Login Time   Office     Office Phone
+katemcgrath               pts/0          Apr 28 16:27 (91.142.105.64)
+pauljackbyrne             pts/2      14  Apr 28 18:39 (86.41.2.235)
+sarahmcnelis              pts/1          Apr 28 19:31 (212.129.80.46)
+
+
+W Command - Users currently logged in and what they are doing:
+ 19:42:54 up 44 days, 22:22,  3 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+katemcgr pts/0    91.142.105.64    16:27    4.00s  0.61s  0.48s vim testInput.sh
+sarahmcn pts/1    212.129.80.46    19:31    6.00s  0.03s  0.00s w
+pauljack pts/2    86.41.2.235      18:39   14:22   0.05s  0.05s -bash
+
+
+Top Command - Summary of System Information:
+top - 19:42:58 up 44 days, 22:22,  3 users,  load average: 0.00, 0.00, 0.00
+Tasks: 112 total,   1 running, 111 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.0 us,  0.0 sy,  0.0 ni, 99.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :    978.6 total,    103.0 free,    211.3 used,    664.4 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    597.0 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+2035429 katemcg+  20   0   24100  10348   6376 S   0.3   1.0   0:00.49 vim
+      1 root      20   0  168932  10952   6316 S   0.0   1.1   4:50.59 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.13 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-kblockd
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     10 root      20   0       0      0      0 S   0.0   0.0   1:22.40 ksoftirqd/0
+     11 root      20   0       0      0      0 I   0.0   0.0   1:38.67 rcu_sched
+     12 root      rt   0       0      0      0 S   0.0   0.0   0:20.58 migration/0
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     14 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs
+     15 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_kthre
+     17 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 xenbus
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.01 xenwatch
+     20 root      20   0       0      0      0 S   0.0   0.0   0:01.22 khungtaskd
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper
+     22 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.09 kcompactd0
+     24 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     25 root      39  19       0      0      0 S   0.0   0.0   0:08.38 khugepaged
+     71 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd
+     72 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     73 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_punt_bio
+     74 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev_wq
+     75 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+     76 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 md
+     77 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-poller
+     78 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq_wq
+     79 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 watchdogd
+     82 root      20   0       0      0      0 S   0.0   0.0   0:26.21 kswapd0
+     83 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ecryptfs-kthrea
+     85 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     86 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-wq
+     87 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-reset-wq
+
+
+History Command - Report of command history
+    1  mkdir Music
+    2  ls
+    3  cd Music
+    4  mkdir Westlife
+    5  mkdir Adele
+    6  mkdir Michael Buble
+    7  ls
+    8  cd Adele
+    9  ls
+   10  mkdir 19
+   11  mkdir 21
+   12  mkdir 25
+   13  ls
+   14  cd ..
+   15  ls
+   16  cd Michael Buble
+   17  cd Michael
+   18  cd ..
+   19  rmdir Michael
+   20  ls
+   21  rmdir Buble
+   22  ls
+   23  cd Westlife
+   24  mkdir CoastToCoast
+   25  mkdir WorldOfOurOwn
+   26  mkdir TheLoveAlbum
+   27  ls
+   28  cd ..
+   29  ls
+   30  mkdir MichaelBuble
+   31  cd MichaelBuble/
+   32  mkdir CrazyLove
+   33  mkdir Christmas
+   34  mkdir Love
+   35  ls
+   36  cd..
+   37  cd ..
+   38  ls
+   39  cd ..
+   40  tree
+   41  cd Music
+   42  cd Adele
+   43  rm 19
+   44  ls
+   45  cd 19
+   46  cd ..
+   47  rmdir 19
+   48  ls
+   49  cd ..
+   50  cd MichaelBuble
+   51  rmdir CrazyLove
+   52  ls
+   53  cd ..
+   54  cd Westlife
+   55  rmdir TheLoveAlbum
+   56  ls
+   57  cd ..
+   58  cd ..#
+   59  ls
+   60  cd ..
+   61  tree
+   62  ls
+   63  echo hello world
+   64  passwd
+   65  date
+   66  hostname
+   67  arch
+   68  uname -a
+   69  dmesg | more
+   70  uptime
+   71  whoami
+   72  who
+   73  last
+   74  finger
+   75  w
+   76  top
+   77  echo $SHELL
+   78  echo {con, pre} {sent fer} {s, ed}
+   79  echo {con, pre}{sent fer}{s, ed}
+   80  echo {con,pre}{sent,fer}{s,ed}
+   81  man ls
+   82  man who
+   83  clear
+   84  man who
+   85  clear
+   86  cal 2000
+   87  cal
+   88  cal 9 1752
+   89  cal sept 1752
+   90  cal -d 1752-9
+   91  yes please
+   92  y please
+   93  time sleep 5
+   94  sleep 5
+   95  history
+   96  ls -l
+   97  rm ip_location
+   98  ls
+   99  clear
+  100  linux www.google.com
+  101  lynx www.google.com
+  102  clear
+  103  lynx www.google.com
+  104  ls
+  105  vi filename
+  106  ls
+  107  mv filename shellscript
+  108  ls
+  109  vi shellscript
+  110  ls
+  111  shellscript
+  112  vi shellscript
+  113  mv shellscript projectscript.sh
+  114  ls
+  115  projectscript.sh
+  116  ls
+  117  vi projectscript.sh
+  118  ls
+  119  bash projectscript.sh
+  120  vi projectscript.sh
+  121  ls
+  122  echo "\n\n" hello
+  123  echo \n hello \n
+  124  echo $"\n\n" hello $"\n"
+  125  echo " "
+  126  vi projectscript.sh
+  127  clear
+  128  bash projectscript.sh
+  129  vi projectscript.sh
+  130  clear
+  131  bash projectscript.sh
+  132  vi projectscript.sh
+  133  ls
+  134  vi projectscript.sh
+  135  clear
+  136  bash projectscript.sh
+  137  echo " "
+  138  echo Date Command - Displays and sets the systems date/time:
+  139  date
+  140  echo " "
+  141  echo " "
+  142  echo Hostname Command - Displays the hostname of this VM:
+  143  hostname
+  144  echo " "
+  145  echo " "
+  146  echo Arch Command - Lists the computer’s architecture:
+  147  arch
+  148  echo " "
+  149  echo " "
+  150  echo Uname -a Command - Basic information on current linux system
+  151  uname -a
+  152  echo " "
+  153  echo " "
+  154  echo Uptime Command - Lists how long the system is active:
+  155  uptime
+  156  echo " "
+  157  echo " "
+  158  echo Whoami Command - Shows what the current username is:
+  159  whoami
+  160  echo " "
+  161  echo " "
+  162  echo Who Command - List of users logged in:
+  163  who
+  164  echo " "
+  165  echo " "
+  166  echo Finger Command - Detailed list of users currently logged in:
+  167  finger
+  168  echo " "
+  169  echo " "
+  170  echo W Command - Users currently logged in and what they are doing:
+  171  w
+  172  echo " "
+  173  echo " "
+  174  echo Top Command - Summary of System Information:
+  175  top
+  176  echo " "
+  177  echo " "
+  178  echo History Command - Report of command history:
+  179  history
+  180  echo " "
+  181  chmod u+x projectscript.sh
+  182  echo " "
+  183  echo Date Command - Displays and sets the systems date/time:
+  184  date
+  185  echo " "
+  186  echo " "
+  187  echo Hostname Command - Displays the hostname of this VM:
+  188  hostname
+  189  echo " "
+  190  echo " "
+  191  echo Arch Command - Lists the computer’s architecture:
+  192  arch
+  193  echo " "
+  194  echo " "
+  195  echo Uname -a Command - Basic information on current linux system
+  196  uname -a
+  197  echo " "
+  198  echo " "
+  199  echo Uptime Command - Lists how long the system is active:
+  200  uptime
+  201  echo " "
+  202  echo " "
+  203  echo Whoami Command - Shows what the current username is:
+  204  whoami
+  205  echo " "
+  206  echo " "
+  207  echo Who Command - List of users logged in:
+  208  who
+  209  echo " "
+  210  echo " "
+  211  echo Finger Command - Detailed list of users currently logged in:
+  212  finger
+  213  echo " "
+  214  echo " "
+  215  echo W Command - Users currently logged in and what they are doing:
+  216  w
+  217  echo " "
+  218  echo " "
+  219  echo Top Command - Summary of System Information:
+  220  top
+  221  echo " "
+  222  echo " "
+  223  echo History Command - Report of command history:
+  224  history
+  225  echo " "
+  226  chmod u+x projectscript.sh
+  227  echo History Command - Report of command history
+  228  history
+  229  chmod u+x projectscript.sh
+  230  echo History Command - Report of command history
+  231  history
+  232  chmod u+x projectscript.sh
+  233  echo History Command - Report of command history
+  234  history
